@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import BillingComponent from "../components/Billing";
 
 import Layout from '../components/Layout'
 
@@ -13,6 +14,7 @@ export default function Home() {
         <p className=" text-venru-darkgray font-medium pt-2">Manage your team and preferences here.</p>
         <MiniTab />
         <PaymentMethod />
+        <BillingComponent />
       </Layout>
     </>
   )
