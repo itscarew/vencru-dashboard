@@ -30,7 +30,7 @@ export default function PaymentMethod() {
 
     return (
         <>
-            <div className="relative my-4 text-sm" >
+            <div className="relative px-8 my-4 text-sm" >
                 <h1 style={{ fontSize: "18px" }} >Payment method</h1>
                 <p className=" text-venru-darkgray font-normal pt-2 text-sm" >Update your billing details and address.</p>
 
