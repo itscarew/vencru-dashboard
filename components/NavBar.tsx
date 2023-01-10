@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Search from "./Search";
-import { DashboardIcon, HomeIcon, LogoIcon, LogoutIcon, ProjectsIcon, ReportIcon, SettingsIcon, SupportIcon, TaskIcon, UserIcon } from "../assets/svg/index";
+import { DashboardIcon, HomeIcon, LogoIcon, LogoIcon2, LogoutIcon, ProjectsIcon, ReportIcon, SettingsIcon, SupportIcon, TaskIcon, UserIcon } from "../assets/svg/index";
 
 export default function NavBar() {
     const router = useRouter();
@@ -18,8 +18,8 @@ export default function NavBar() {
         { name: "Settings", icon: <SettingsIcon />, href: "/settings" },
     ]
     return (
-        <nav className='w-72 py-10 border-r-2 border-gray-200 px-6'>
-            <div className=' text-2xl flex items-center font-medium'> <LogoIcon /> <h1 className='ml-3'> Untitled UI </h1></div>
+        <nav className='w-72 py-10 border-r-2 border-gray-200 px-6 hidden md:block  '>
+            <div className=' text-2xl flex items-center font-medium'> <LogoIcon2 /> <h1 className='ml-3'> Untitled UI </h1></div>
             <div className="pt-6" >
                 <Search />
             </div>
@@ -51,7 +51,7 @@ export default function NavBar() {
             <div className="flex items-center border-t-2 border-gray-200 justify-between text-sm py-6 " >
                 <div className="flex items-center" >
                     <div className="relative  rounded-full overflow-hidden w-12 h-12 mr-2" >
-                        <Image src={"/avatar.png"} alt="#" fill />
+                        <Image src={"/Avatar-5.png"} alt="#" fill />
                     </div>
                     <div>
                         <p>Olivia Rhye</p>

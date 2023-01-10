@@ -30,12 +30,12 @@ export default function PaymentMethod() {
                 <h1 style={{ fontSize: "18px" }} >Payment method</h1>
                 <p className=" text-venru-darkgray font-normal pt-2 text-sm" >Update your billing details and address.</p>
 
-                <div className="flex items-baseline mt-5 border-t-2 py-4 border-gray-200" >
-                    <div className="mr-28"  >
+                <div className="flex md:flex-row flex-col items-baseline mt-5 border-t-2 py-4 border-gray-200" >
+                    <div className="mr-28 mb-4 "  >
                         <h1 >Contact email </h1>
                         <span className=" text-venru-darkgray font-normal pt-2 text-sm  " >Where should invoices be sent?</span>
                     </div>
-                    <div className="flex-1" >
+                    <div className="flex-1 w-full" >
                         <div className="relative flex items-baseline mb-4" >
                             <input type="radio" name="1" className="absolute top-1 h-4 w-4 border-gray-300 focus:ring-2 text-venru-purple  " checked />
                             <div className="text-sm font-medium text-gray-900  ml-6">
@@ -51,7 +51,7 @@ export default function PaymentMethod() {
                                 <div className="relative" >
                                     <input
                                         type={"text"}
-                                        className="flex w-8/12 pl-10 relative items-center mt-3 text-venru-darkgray border-2  border-gray-300 bg-white font-medium p-2 text-sm  rounded-lg outline-none"
+                                        className="flex md:w-8/12 w-full pl-10 relative items-center mt-3 text-venru-darkgray border-2  border-gray-300 bg-white font-medium p-2 text-sm  rounded-lg outline-none"
                                         placeholder="billing@untitledui.com"
                                     />
                                     <div className="absolute top-3 left-3" >
@@ -63,12 +63,12 @@ export default function PaymentMethod() {
                     </div>
                 </div>
 
-                <div className="flex items-baseline border-t-2 py-4 border-gray-200" >
-                    <div className="mr-28"  >
+                <div className="flex md:flex-row flex-col items-baseline border-t-2 py-4 border-gray-200" >
+                    <div className="mr-28 mb-6"  >
                         <h1 >Card details </h1>
                         <span className=" text-venru-darkgray font-normal pt-2 text-sm  " >Select default payment method.</span>
                     </div>
-                    <div className="flex-1" >
+                    <div className="flex-1 w-full " >
                         {cardDetails.map((details) => {
                             return <div key={details.title}
                                 style={{ borderWidth: "0.7px" }} className={`relative flex items-baseline mb-4 bg-white  cursor-pointer ${details.id === check && "bg-venru-gray border-venru-purple"} border-gray-300 hover:border-venru-purple rounded-lg py-3`}

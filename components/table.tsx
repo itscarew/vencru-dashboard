@@ -64,8 +64,8 @@ export default function TableComponent() {
 
     return (
         <>
-            <div className="w-full overflow-x-auto my-7" >
-                <div className="relative overflow-x-auto shadow-lg  sm:rounded-lg border-2 border-gray-100 ">
+            <div className="md:w-full my-7" >
+                <div className="relative overflow-x-auto shadow-lg  md:rounded-lg border-2 border-gray-100 ">
                     <table className="w-full text-left text-gray-500 dark:text-gray-400 cursor-pointer">
                         <thead className="text-xs bg-venru-gray border-b">
                             <tr>
