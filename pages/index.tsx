@@ -12,9 +12,9 @@ export default function Home() {
           <h1 className="text-3xl" >Settings</h1>
           <p className=" text-venru-darkgray font-normal pt-2">Manage your team and preferences here.</p>
         </div>
-        <div className="md:px-8" ><MiniTab /></div>
-        <div className="px-8" ><PaymentMethod /></div>
-        <div className="md:px-8" ><BillingComponent /></div>
+        <MiniTab />
+        <PaymentMethod />
+        <BillingComponent />
       </Layout>
     </>
   )
