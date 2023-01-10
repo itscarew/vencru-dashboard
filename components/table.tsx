@@ -75,22 +75,22 @@ export default function TableComponent() {
                                         <label htmlFor="checkbox-all-search" className="sr-only">checkbox</label>
                                     </div>
                                 </th>
-                                <th scope="col" className="px-6 py-3 font-medium ">
+                                <th scope="col" className="px-6 py-3 font-normal ">
                                     <span className="flex items-center">  <p className="pr-2"> Invoice  </p> <ArrowDownIcon /> </span>
                                 </th>
-                                <th scope="col" className="px-6 py-3 font-medium ">
+                                <th scope="col" className="px-6 py-3 font-normal ">
                                     Amount
                                 </th>
-                                <th scope="col" className="px-6 py-3 font-medium">
+                                <th scope="col" className="px-6 py-3 font-normal">
                                     Date
                                 </th>
-                                <th scope="col" className="px-6 py-3 font-medium">
+                                <th scope="col" className="px-6 py-3 font-normal">
                                     Status
                                 </th>
-                                <th scope="col" className="px-6 py-3 font-medium">
+                                <th scope="col" className="px-6 py-3 font-normal">
                                     Users on plan
                                 </th>
-                                <th scope="col" className="px-6 py-3 font-medium ">
+                                <th scope="col" className="px-6 py-3 font-normal ">
                                 </th>
                             </tr>
                         </thead>
@@ -107,14 +107,14 @@ export default function TableComponent() {
                                         <th scope="row" className="px-6 py-4 w-4/12 hover:bg-gray-50 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                             {data.invoice}
                                         </th>
-                                        <td className="px-6 py-4 hover:bg-gray-50">
+                                        <td className="px-6 py-4 hover:bg-gray-50 font-normal ">
                                             {data.amount}
                                         </td>
-                                        <td className="px-6 py-4 hover:bg-gray-50">
+                                        <td className="px-6 py-4 hover:bg-gray-50 font-normal">
                                             {data.data}
                                         </td>
                                         <td className="px-6 py-4 hover:bg-gray-50 ">
-                                            <span className="bg-green-100  text-green-700 rounded-full px-2 flex items-center w-16 " style={{ paddingTop: "3px", paddingBottom: "3px" }}  >
+                                            <span className="bg-green-100  text-green-700 rounded-full px-2 flex items-center font-normal w-16 " style={{ paddingTop: "3px", paddingBottom: "3px" }}  >
                                                 <CheckMarkIcon /> <span className="ml-1" >  {data.status} </span>
                                             </span>
                                         </td>
@@ -125,7 +125,7 @@ export default function TableComponent() {
                                                         <Image src={user} alt="#" className="rounded-full -mr-2 " fill />
                                                     </div>
                                                 })}
-                                                {data.users.length > 4 && <span className=" flex items-center justify-center rounded-full -mr-2 z-10 border-2 bg-venru-gray border-white" style={{ width: 32, height: 32 }} >+1</span>}
+                                                {data.users.length > 4 && <span className=" flex items-center justify-center rounded-full -mr-2 z-10 border-2 bg-venru-gray border-white font-normal" style={{ width: 32, height: 32 }} >+1</span>}
                                             </span>
                                         </td>
                                         <td className="px-6 py-4 hover:bg-gray-50 cursor-pointer">

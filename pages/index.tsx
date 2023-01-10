@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Layout>
         <h1 className="text-3xl" >Settings</h1>
-        <p className=" text-venru-darkgray font-medium pt-2">Manage your team and preferences here.</p>
+        <p className=" text-venru-darkgray font-normal pt-2">Manage your team and preferences here.</p>
         <MiniTab />
         <PaymentMethod />
         <BillingComponent />

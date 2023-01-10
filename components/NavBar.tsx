@@ -2,14 +2,11 @@ import React, { useContext } from "react";
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import AppContext from "./AppContext";
 import Search from "./Search";
 import { DashboardIcon, HomeIcon, LogoIcon, LogoutIcon, ProjectsIcon, ReportIcon, SettingsIcon, SupportIcon, TaskIcon, UserIcon } from "../assets/svg/index";
 
 export default function NavBar() {
-    const { watchListState, themeState }: any = useContext(AppContext)
     const router = useRouter();
-
     const routes = [
         { name: "Home", icon: <HomeIcon />, href: "/" },
         { name: "Dashboard", icon: <DashboardIcon />, href: "#" },

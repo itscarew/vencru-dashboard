@@ -1,6 +1,5 @@
 import { useState } from "react"
 
-
 export default function MiniTab() {
 
     const [check, setChecked] = useState(6);

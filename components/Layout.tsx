@@ -1,6 +1,6 @@
 import AppHead from '../components/Head'
 import NavBar from './NavBar'
-import React, { useContext } from "react";
+import React from "react";
 
 export default function Layout({ children }: any) {
     return (

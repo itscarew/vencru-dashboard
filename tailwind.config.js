@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ["Geometria", "sans-serif"],
+        body: ["Inter", "Geometria", "sans-serif"],
       },
       colors: {
         fern: {
