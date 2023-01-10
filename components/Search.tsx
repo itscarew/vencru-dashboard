@@ -11,18 +11,13 @@ export default function Search({ onChange, onClick, value }: any) {
         setMovie(e.target.value)
     }
 
-    useEffect(() => {
-        if (movie.length > 0 && router.pathname !== "/search") {
-            router.push("/search")
-        }
-    }, [movie, router])
     return (
         <>
             <div className='flex items-center relative mb-4' >
                 <input
                     type={"text"}
-                    className={`w-full border-2 rounded-full py-2 pl-10 border-gray-300 focus:outline-none  focus:border-fern-400   ${themeState.theme ? "bg-black border-gray-700  text-white" : ""} `}
-                    placeholder='Search Movie...'
+                    className={`w-full border-2 rounded-lg py-2 pl-10 border-gray-300 focus:outline-none  focus:border-gray-400   ${themeState.theme ? "bg-black border-gray-700  text-white" : ""} `}
+                    placeholder='Search'
                     value={value || movie}
                     onChange={onChange || handleChange}
                 />

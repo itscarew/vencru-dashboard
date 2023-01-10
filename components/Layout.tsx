@@ -11,15 +11,13 @@ export default function Layout({ children }: any) {
     return (
         <>
             <AppHead />
-            <div className={`${themeState.theme ? "bg-black text-white" : ""}`}  >
-                <div className={`flex min-h-screen font-body mx-auto ${themeState.theme ? "bg-black text-white" : ""}`} style={{ width: "1490px" }}>
+            <div className={`text-gray-900 `}  >
+                <div className={`flex min-h-screen font-body text-venru-black mx-auto font-medium text-base  `} style={{ width: "1490px" }}>
                     <NavBar />
-                    <div className='flex-1' >
+                    <div className='flex-1 bg-venru-gray py-10 px-8 leading-none'>
                         {children}
                     </div>
-                    <RightNav />
                 </div>
-                <Footer />
             </div>
         </>
     )

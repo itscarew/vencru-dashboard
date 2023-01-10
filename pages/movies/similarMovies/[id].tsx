@@ -3,7 +3,7 @@ import { MovieApi } from "../../../api/api";
 import Card from "../../../components/Card";
 import DrawerComponent from "../../../components/Drawer";
 import Layout from "../../../components/Layout";
-import PageCount from "../../../components/PageCount";
+
 import TitleBanner from "../../../components/TitleBanner";
 import { useRouter } from "next/router";
 
@@ -71,7 +71,7 @@ export default function NewMovies() {
                             />
                         })}
                     </div>
-                    <PageCount onClick={(number: any) => changePageNo(number)} pageNo={pageNo} />
+
                 </div>
                 <DrawerComponent isOpen={isOpen} onClose={toggleDrawer} movieId={movieId} />
             </Layout>

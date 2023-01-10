@@ -22,8 +22,14 @@ module.exports = {
           800: "#155028",
           900: "#124223",
         },
+        venru: {
+          gray: "#F9FAFB",
+          darkgray: "#667085",
+          black: "#344054",
+          purple: "#6941C6",
+        },
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
