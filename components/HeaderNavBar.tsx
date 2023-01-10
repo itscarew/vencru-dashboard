@@ -31,17 +31,17 @@ export default function HeaderNavBar({ children }: any) {
 
     return (
         <>
-            <nav className="bg-white border-gray-200 px-2 sm:px-4 py-4 shadow-sm  dark:bg-gray-900 block md:hidden relative ">
+            <nav className="bg-white border-gray-200 px-2 sm:px-4 py-4 shadow-sm block md:hidden relative ">
                 <div className="flex flex-wrap items-center justify-between mx-auto px-4">
                     <Link href="/" className="flex items-center">
                         <LogoIcon />
-                        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white ml-3 "> Untitled UI  </span>
+                        <span className="self-center text-xl font-semibold whitespace-nowrap  ml-3 "> Untitled UI  </span>
                     </Link>
                     <div className="flex md:order-2">
                         <div className="relative hidden md:block">
                             <Input />
                         </div>
-                        <button onClick={handleHambuger} data-collapse-toggle="navbar-search" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
+                        <button onClick={handleHambuger} data-collapse-toggle="navbar-search" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 ">
                             <span className="sr-only">Open menu</span>
                             <HambugerIcon />
                         </button>
@@ -66,7 +66,7 @@ export default function HeaderNavBar({ children }: any) {
                                 </div>
                                 <div>
                                     <p>Olivia Rhye</p>
-                                    <a className="font-normal" href="mailto:email@example.com">olivia@untitledui.com</a>
+                                    <a className="font-normal" href="mailto:olivia@untitledui.com">olivia@untitledui.com</a>
                                 </div>
                             </div>
                             <div className=" cursor-pointer" >

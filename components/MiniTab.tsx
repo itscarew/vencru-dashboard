@@ -17,7 +17,7 @@ export default function MiniTab() {
 
     return (
         <>
-            <div className="md:px-8" >
+            <div className="md:px-8 md:my-0 my-7 " >
                 <div className="relative overflow-x-auto  md:w-9/12 w-full mt-5 mb-6 md:rounded-lg overflow-hidden text-center divide-x divide-gray-200 flex border-2 border-gray-200 cursor-pointer" >
                     {routes.map((route: any) => {
                         return <div key={route.name} className={`w-full whitespace-nowrap text-sm p-2 bg-white hover:bg-venru-gray ${route.id === check && "bg-venru-gray"}  `}

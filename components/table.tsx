@@ -66,12 +66,12 @@ export default function TableComponent() {
         <>
             <div className="md:w-full my-7" >
                 <div className="relative overflow-x-auto shadow-lg  md:rounded-lg border-2 border-gray-100 ">
-                    <table className="w-full text-left text-gray-500 dark:text-gray-400 cursor-pointer">
+                    <table className="w-full text-left text-gray-500 cursor-pointer">
                         <thead className="text-xs bg-venru-gray border-b">
                             <tr>
                                 <th scope="col" className="p-4">
                                     <div className="flex items-center">
-                                        <input id="checkbox-search" type="checkbox" className="w-4 h-4 text-blue-600  border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                        <input id="checkbox-search" type="checkbox" className="w-4 h-4 text-blue-600  border-gray-300 rounded focus:ring-blue-500 focus:ring-2 " />
                                         <label htmlFor="checkbox-search" className="sr-only">checkbox</label>
                                     </div>
                                 </th>
@@ -97,14 +97,14 @@ export default function TableComponent() {
                         <tbody>
                             {billingData.map((data) => {
                                 return (
-                                    <tr key={data.id} className="bg-white border-b whitespace-nowrap dark:bg-gray-800 dark:border-gray-700  dark:hover:bg-gray-600 text-sm  ">
+                                    <tr key={data.id} className="bg-white border-b whitespace-nowrap text-sm  ">
                                         <td className="w-4 p-4 hover:bg-gray-50">
                                             <div className="flex items-center">
-                                                <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4 text-blue-600  border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                                <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4 text-blue-600  border-gray-300 rounded focus:ring-blue-500  focus:ring-2 " />
                                                 <label htmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
                                             </div>
                                         </td>
-                                        <th scope="row" className="px-6 py-4 w-4/12 hover:bg-gray-50 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        <th scope="row" className="px-6 py-4 w-4/12 hover:bg-gray-50 font-medium text-gray-800 whitespace-nowrap ">
                                             {data.invoice}
                                         </th>
                                         <td className="px-6 py-4 hover:bg-gray-50 font-normal ">
