@@ -50,6 +50,7 @@ export default function PaymentMethod() {
                                 <h1 >Send to an alternative email</h1>
                                 <div className="relative" >
                                     <input
+                                        type={"text"}
                                         className="flex w-8/12 pl-10 relative items-center mt-3 text-venru-darkgray border-2  border-gray-300 bg-white font-medium p-2 text-sm  rounded-lg outline-none"
                                         placeholder="billing@untitledui.com"
                                     />
