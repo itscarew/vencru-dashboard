@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import Search from "./Search";
+import Input from "./Input";
 import { DashboardIcon, HomeIcon, LogoIcon, LogoIcon2, LogoutIcon, ProjectsIcon, ReportIcon, SettingsIcon, SupportIcon, TaskIcon, UserIcon } from "../assets/svg/index";
 
 export default function NavBar() {
@@ -21,7 +21,7 @@ export default function NavBar() {
         <nav className='w-72 py-10 border-r-2 border-gray-200 px-6 hidden md:block  '>
             <div className=' text-2xl flex items-center font-medium'> <LogoIcon2 /> <h1 className='ml-3'> Untitled UI </h1></div>
             <div className="pt-6" >
-                <Search />
+                <Input />
             </div>
             <div className=' pt-2'>
                 {routes.map((route, index) => {

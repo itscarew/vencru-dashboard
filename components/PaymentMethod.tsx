@@ -4,6 +4,10 @@ import { useState } from "react"
 
 
 export default function PaymentMethod() {
+    const [data, setData] = useState("");
+    const handleChange = (e: any) => {
+        setData(e.target.value)
+    }
 
     const cardDetails = [
         {
@@ -53,6 +57,8 @@ export default function PaymentMethod() {
                                         type={"text"}
                                         className="flex md:w-8/12 w-full pl-10 relative items-center mt-3 text-venru-darkgray border-2  border-gray-300 bg-white font-medium p-2 text-sm  rounded-lg outline-none"
                                         placeholder="billing@untitledui.com"
+                                        value={data}
+                                        onChange={handleChange}
                                     />
                                     <div className="absolute top-3 left-3" >
                                         <MessageIcon />

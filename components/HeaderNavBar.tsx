@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Search from './Search';
 import Link from 'next/link';
 import { DashboardIcon, HambugerIcon, HomeIcon, LogoIcon, LogoutIcon, ProjectsIcon, ReportIcon, SettingsIcon, SupportIcon, TaskIcon, UserIcon } from "../assets/svg/index";
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import Input from "./Input";
 
 export default function HeaderNavBar({ children }: any) {
     const router = useRouter();
@@ -39,7 +39,7 @@ export default function HeaderNavBar({ children }: any) {
                     </Link>
                     <div className="flex md:order-2">
                         <div className="relative hidden md:block">
-                            <Search />
+                            <Input />
                         </div>
                         <button onClick={handleHambuger} data-collapse-toggle="navbar-search" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
                             <span className="sr-only">Open menu</span>
@@ -48,7 +48,7 @@ export default function HeaderNavBar({ children }: any) {
                     </div>
                     <div className={`items-center overflow-y-auto h-screen justify-between ${open ? "" : "hidden"} w-full md:flex md:w-auto md:order-1" id="navbar-search`}>
                         <div className="relative mt-3 md:hidden">
-                            <Search />
+                            <Input />
                         </div>
                         {routes.map((route, index) => {
                             return (
