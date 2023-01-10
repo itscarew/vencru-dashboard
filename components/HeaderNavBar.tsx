@@ -31,7 +31,7 @@ export default function HeaderNavBar({ children }: any) {
 
     return (
         <>
-            <nav className="bg-white border-gray-200 px-2 sm:px-4 py-3 rounded dark:bg-gray-900 block md:hidden relative ">
+            <nav className="bg-white border-gray-200 px-2 sm:px-4 py-4 shadow-sm  dark:bg-gray-900 block md:hidden relative ">
                 <div className="flex flex-wrap items-center justify-between mx-auto px-4">
                     <Link href="/" className="flex items-center">
                         <LogoIcon />
@@ -46,7 +46,7 @@ export default function HeaderNavBar({ children }: any) {
                             <HambugerIcon />
                         </button>
                     </div>
-                    <div className={`items-center justify-between ${open ? "" : "hidden"} w-full md:flex md:w-auto md:order-1" id="navbar-search`}>
+                    <div className={`items-center overflow-y-auto h-screen justify-between ${open ? "" : "hidden"} w-full md:flex md:w-auto md:order-1" id="navbar-search`}>
                         <div className="relative mt-3 md:hidden">
                             <Search />
                         </div>
@@ -59,8 +59,7 @@ export default function HeaderNavBar({ children }: any) {
                                     </Link>
                                 </div>)
                         })}
-
-                        <div className="flex items-center border-t-2 border-gray-200 justify-between text-sm py-6 " >
+                        <div className="flex items-center  border-t-2 border-gray-200 justify-between text-sm py-6 " >
                             <div className="flex items-center" >
                                 <div className="relative  rounded-full overflow-hidden w-12 h-12 mr-2" >
                                     <Image src={"/Avatar-5.png"} alt="#" fill />
